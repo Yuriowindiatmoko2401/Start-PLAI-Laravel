@@ -17,7 +17,7 @@
                 1
               </div>
               <h4 class="text-[#E2C665] font-semibold mb-2">Pendaftaran Online</h4>
-              <p class="text-sm text-gray-300">Isi formulir dan upload dokumen bukti pendaftaran dan persyaratan</p>
+              <p class="text-sm text-gray-300">Lengkapi formulir pendaftaran secara daring untuk memulai proses menjadi Calon Mahasiswa PLAI BMD.</p>
             </div>
           </div>
 
@@ -27,8 +27,8 @@
               <div class="w-12 h-12 mx-auto mb-4 bg-[#E2C665] rounded-full text-black font-bold flex items-center justify-center">
                 2
               </div>
-              <h4 class="text-[#E2C665] font-semibold mb-2">Verifikasi</h4>
-              <p class="text-sm text-gray-300">Pengecekan kelengkapan dokumen</p>
+              <h4 class="text-[#E2C665] font-semibold mb-2">Pembayaran Pendaftaran dan Upload Bukti</h4>
+              <p class="text-sm text-gray-300">Lakukan pembayaran sesuai biaya pendaftaran dan unggah bukti transfer untuk verifikasi.</p>
             </div>
           </div>
 
@@ -38,8 +38,8 @@
               <div class="w-12 h-12 mx-auto mb-4 bg-[#E2C665] rounded-full text-black font-bold flex items-center justify-center">
                 3
               </div>
-              <h4 class="text-[#E2C665] font-semibold mb-2">Tes Seleksi</h4>
-              <p class="text-sm text-gray-300">Tes logika dan wawancara</p>
+              <h4 class="text-[#E2C665] font-semibold mb-2">Unggah Dokumen</h4>
+              <p class="text-sm text-gray-300">Kirim hasil scan dokumen persyaratan seperti rapor, ijazah, dan sertifikat pendukung.</p>
             </div>
           </div>
 
@@ -49,8 +49,8 @@
               <div class="w-12 h-12 mx-auto mb-4 bg-[#E2C665] rounded-full text-black font-bold flex items-center justify-center">
                 4
               </div>
-              <h4 class="text-[#E2C665] font-semibold mb-2">Pengumuman</h4>
-              <p class="text-sm text-gray-300">Hasil seleksi via email</p>
+              <h4 class="text-[#E2C665] font-semibold mb-2">Tes Seleksi Online</h4>
+              <p class="text-sm text-gray-300">Ikuti tes seleksi online yang mencakup logika, motivasi, dan kesiapan belajar.</p>
             </div>
           </div>
 
@@ -60,8 +60,8 @@
               <div class="w-12 h-12 mx-auto mb-4 bg-[#E2C665] rounded-full text-black font-bold flex items-center justify-center">
                 5
               </div>
-              <h4 class="text-[#E2C665] font-semibold mb-2">Pembayaran</h4>
-              <p class="text-sm text-gray-300">Registrasi ulang dan pembayaran biaya pendidikan</p>
+              <h4 class="text-[#E2C665] font-semibold mb-2">Pengumuman</h4>
+              <p class="text-sm text-gray-300">Cek hasil seleksi melalui portal penerimaan resmi dan lanjut ke tahap registrasi ulang.</p>
             </div>
           </div>
 
