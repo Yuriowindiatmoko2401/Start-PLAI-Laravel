@@ -1,13 +1,13 @@
         <!-- Navigation -->
-        <nav class="fixed w-full bg-black bg-opacity-90 z-50 font-['Rubik',sans-serif]">
-            <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+        <nav class="navbar fixed-top">
+            <div class="container px-4 md:px-0 flex flex-wrap items-center justify-between lg:flex-nowrap">
                 <!-- Image Logo -->
                 <a href="#" class="flex items-center">
                     <img src="https://dev.plai.ac.id/assets/images/logo/PLAI-BMD%20-%20HORIZONTAL.png" alt="PLAI BMD Logo" class="h-7">
                 </a>
-
+                
                 <!-- Desktop menu - centered -->
-                <ul class="hidden md:flex items-center justify-center space-x-8 mx-auto pl-0 mb-0 list-none">
+                <ul class="rubik pl-0 mt-3 mb-2 ml-auto lg:mx-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
                     <li><a href="#admissions" class="md:text-white hover:text-[#E2C665] transition py-[10px] px-[10px] inline-block">Admisi</a></li>
                     <li><a href="#requirements" class="md:text-white hover:text-[#E2C665] transition py-[10px] px-[10px] inline-block">Persyaratan</a></li>
                     <li><a href="#process" class="md:text-white hover:text-[#E2C665] transition py-[10px] px-[10px] inline-block">Proses</a></li>
