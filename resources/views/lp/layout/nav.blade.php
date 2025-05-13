@@ -1,59 +1,35 @@
         <!-- Navigation -->
-        <nav class="navbar fixed-top">
-            <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap">
-
-                <!-- Text Logo - Use this if you don't have a graphic logo -->
-                <!-- <a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">Pavo</a> -->
-
+        <nav class="fixed w-full bg-black bg-opacity-90 border-b border-gray-800 z-50">
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
                 <!-- Image Logo -->
-                <a class="inline-block mr-4 py-0.5 text-white text-xl whitespace-nowrap hover:no-underline focus:no-underline"
-                    href="index.html">
-                    <img src="assets/images/logo/PLAI-BMD - HORIZONTAL.png" alt="alternative" class="h-7" />
+                <a href="#" class="flex items-center">
+                    <img src="https://dev.plai.ac.id/assets/images/logo/PLAI-BMD%20-%20HORIZONTAL.png" alt="PLAI BMD Logo" class="h-8">
                 </a>
 
-                <button
-                    class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400"
-                    type="button" data-toggle="offcanvas">
-                    <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle text-white"></span>
-                </button>
+                <!-- Desktop menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#admissions" class="text-gray-300 hover:text-[#E2C665] transition">Admisi</a>
+                    <a href="#requirements" class="text-gray-300 hover:text-[#E2C665] transition">Persyaratan</a>
+                    <a href="#process" class="text-gray-300 hover:text-[#E2C665] transition">Proses</a>
+                    <a href="#scholarship" class="text-gray-300 hover:text-[#E2C665] transition">Beasiswa</a>
+                    <a href="#faq" class="text-gray-300 hover:text-[#E2C665] transition">FAQ</a>
+                </div>
 
-                <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center lg:justify-center"
-                    id="navbarsExampleDefault">
-                    <ul class="pl-0 mt-3 mb-2 ml-auto lg:mx-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
-                        <li>
-                            <a class="nav-link page-scroll md:text-white active" href="#header">Home <span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll md:text-white" href="#features">Tentang PLAI BMD</a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="nav-link dropdown-toggle md:text-white" href="#" id="dropdown01" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Program Studi</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                <a class="dropdown-item page-scroll md:text-white" href="article.html">AI & Robotika</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item page-scroll md:text-white" href="terms.html">Sains Data Terapan</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item page-scroll md:text-white" href="privacy.html">Keamanan Siber</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll md:text-white" href="#mitra">Mitra</a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll md:text-white" href="#porto">Proyek</a>
-                        </li>
-                        {{-- <li>
-                            <a class="nav-link page-scroll" href="#download">Download</a>
-                        </li> --}}
-                    </ul>
-                    <span class="block mt-10 md:mt-0 lg:ml-3.5 flex justify-center md:justify-normal">
-                        <a class="btn md:text-white border-2 border-[#E2C665] p-2 rounded-full px-4 bg-[#E2C665] md:bg-transparent" href="#your-link">
-                            Daftar PMB
-                        </a>
-                    </span>
-                </div> <!-- end of navbar-collapse -->
-            </div> <!-- end of container -->
-        </nav> <!-- end of navbar -->
+                <!-- Mobile menu button -->
+                <button class="md:hidden focus:outline-none" id="menuBtn">
+                    <i data-feather="menu" class="text-white"></i>
+                </button>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="hidden md:hidden bg-gray-900 border-b border-gray-800" id="mobileMenu">
+                <div class="container mx-auto px-4 py-2 space-y-3">
+                    <a href="#admissions" class="block text-gray-300 hover:text-[#E2C665] transition py-2">Admisi</a>
+                    <a href="#requirements" class="block text-gray-300 hover:text-[#E2C665] transition py-2">Persyaratan</a>
+                    <a href="#process" class="block text-gray-300 hover:text-[#E2C665] transition py-2">Proses</a>
+                    <a href="#scholarship" class="block text-gray-300 hover:text-[#E2C665] transition py-2">Beasiswa</a>
+                    <a href="#faq" class="block text-gray-300 hover:text-[#E2C665] transition py-2">FAQ</a>
+                </div>
+            </div>
+        </nav>
         <!-- end of navigation -->
