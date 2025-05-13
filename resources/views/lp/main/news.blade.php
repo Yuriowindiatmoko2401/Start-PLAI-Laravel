@@ -33,8 +33,12 @@
           
           <div class="p-6 flex-grow flex flex-col justify-between">
             <div>
+            <div class="flex justify-between items-center mb-3 pb-3 border-b border-gray-800">
+                <span class="text-gray-400">Biaya Kuliah Awal</span>
+                <span class="font-semibold text-white">Rp 35.000.000</span>
+              </div>
               <div class="flex justify-between items-center mb-3 pb-3 border-b border-gray-800">
-                <span class="text-gray-400">Biaya per semester</span>
+                <span class="text-gray-400">Biaya Kuliah semester</span>
                 <span class="font-semibold text-white">Rp 15.000.000</span>
               </div>
               
@@ -72,11 +76,14 @@
           
           <div class="p-6 flex-grow flex flex-col justify-between">
             <div>
+            <div class="flex justify-between items-center mb-3 pb-3 border-b border-gray-800">
+                <span class="text-gray-400">Biaya Kuliah Awal</span>
+                <span class="font-semibold text-white">Rp 35.000.000</span>
+              </div>
               <div class="flex justify-between items-center mb-3 pb-3 border-b border-gray-800">
-                <span class="text-gray-400">Biaya per semester</span>
+                <span class="text-gray-400">Biaya Kuliah semester</span>
                 <span class="font-semibold text-white">Rp 15.000.000</span>
               </div>
-              
               <div class="flex justify-between items-center mb-5 pb-3 border-b border-gray-700">
                 <span class="text-gray-400">Biaya Angsuran Per-Semester 2x</span>
                 <span class="font-semibold text-white">Rp 7.500.000</span>
@@ -111,8 +118,12 @@
           
           <div class="p-6 flex-grow flex flex-col justify-between">
             <div>
+            <div class="flex justify-between items-center mb-3 pb-3 border-b border-gray-800">
+                <span class="text-gray-400">Biaya Kuliah Awal</span>
+                <span class="font-semibold text-white">Rp 35.000.000</span>
+              </div>
               <div class="flex justify-between items-center mb-3 pb-3 border-b border-gray-800">
-                <span class="text-gray-400">Biaya per semester</span>
+                <span class="text-gray-400">Biaya Kuliah semester</span>
                 <span class="font-semibold text-white">Rp 15.000.000</span>
               </div>
               

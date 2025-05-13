@@ -1,174 +1,110 @@
-    <section id="faculty" class="pb-5 bg-darkalt">
-        <section class="bg-black py-16">
-            <div class="container mx-auto px-4 md:px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                        <span class="text-[#E2C665]">Dosen</span>
-                    </h2>
-                    {{-- <p class="text-white max-w-3xl mx-auto">
-                        Kami sudah kerja sama dengan berbagai mitra industri untuk memastikan pembelajaran kamu relevan dan
-                        siap pakai.
-                    </p> --}}
-                </div>
+<section id="faq" class="py-16 bg-gray-900">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-white">
+        <span class="inline-block px-2 py-1 bg-[#E2C665] text-black rounded-md mr-2">❓</span>
+        Pertanyaan Umum tentang Penerimaan Mahasiswa Baru
+      </h2>
+    </div>
 
-                <!-- Staggered Faculty Grid -->
-                <div class="relative max-w-5xl mx-auto">
-                    <!-- First Row -->
-                    <div class="flex flex-wrap justify-center -mx-2">
-                        <!-- Dosen 1 -->
-                        <div class="w-1/2 md:w-1/3 lg:w-1/5 px-2 mb-8 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out"
-                            style="z-index: 10;">
-                            <div class="relative h-64 md:h-80 overflow-hidden bg-[#E2C665] group">
-                                <img src="assets/images/dosen/Anip-Moniva.png"
-                                    alt="Dr. Andi Wijaya"
-                                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-4">
-                                    <h3 class="text-white font-bold">Anip Moniva S.Ti, M.Kom.</h3>
-                                    <p class="text-sm text-white">Deep Learning</p>
-                                </div>
-                            </div>
-                        </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      
+      <!-- FAQ 1 -->
+      <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-md group transition-all duration-300 hover:-translate-y-1">
+        <button class="w-full text-left p-5 flex items-center justify-between bg-gray-800 hover:bg-gray-700 transition-colors" onclick="toggleFaq(this)">
+          <span class="text-white font-medium">Apa saja biaya kuliah di PLAI?</span>
+          <i data-feather="chevron-down" class="text-[#E2C665] faq-icon transition-transform"></i>
+        </button>
+        <div class="faq-content p-5 text-gray-300 hidden">
+          <p>
+            Biaya kuliah di PLAI BMD terdiri dari biaya pendaftaran sebesar <strong>Rp. 350.000</strong>,
+            biaya Kuliah Awal <strong>Rp. 35.000.000</strong> (bisa dicicil), dan Biaya Kuliah Semester
+            <strong>Rp. 15.000.000</strong> (bisa dicicil).
+          </p>
+        </div>
+      </div>
 
-                        <!-- Dosen 2 -->
-                        <div class="w-1/2 md:w-1/3 lg:w-1/5 px-2 mb-8 mt-12 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out"
-                            style="z-index: 9; margin-left: -10px;">
-                            <div class="relative h-64 md:h-72 overflow-hidden bg-green-600 group">
-                                <img src="assets/images/dosen/Lubna.png"
-                                    alt="Prof. Budi Hartono"
-                                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-4">
-                                    <h3 class="text-white font-bold">Lubna S.SI, M.Kom.</h3>
-                                    <p class="text-white text-sm">Data Science</p>
-                                </div>
-                            </div>
-                        </div>
+      <!-- FAQ 2 -->
+      <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-md group transition-all duration-300 hover:-translate-y-1">
+        <button class="w-full text-left p-5 flex items-center justify-between bg-gray-800 hover:bg-gray-700 transition-colors" onclick="toggleFaq(this)">
+          <span class="text-white font-medium">Apakah perlu memiliki background IT untuk mendaftar?</span>
+          <i data-feather="chevron-down" class="text-[#E2C665] faq-icon transition-transform"></i>
+        </button>
+        <div class="faq-content p-5 text-gray-300 hidden">
+          <p>
+            Tidak perlu memiliki background IT khusus, tetapi calon mahasiswa diharapkan memiliki minat tinggi pada bidang teknologi, kemampuan dasar logika dan matematika yang baik, serta kemauan untuk belajar yang kuat.
+          </p>
+        </div>
+      </div>
 
-                        <!-- Dosen 3 -->
-                        <div class="w-1/2 md:w-1/3 lg:w-1/5 px-2 mb-8 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out"
-                            style="z-index: 8; margin-left: -10px;">
-                            <div class="relative h-72 md:h-96 overflow-hidden bg-red-500 group">
-                                <img src="assets/images/dosen/Nurdana-Ahmad-Fadil.png"
-                                    alt="Dr. Citra Dewi"
-                                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-4">
-                                    <h3 class="text-white font-bold">Nurdana Ahmad Fadil S.Kom., M.Cs</h3>
-                                    <p class="text-white text-sm">AI & Machine Learning</p>
-                                </div>
-                            </div>
-                        </div>
+      <!-- FAQ 3 -->
+      <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-md group transition-all duration-300 hover:-translate-y-1">
+        <button class="w-full text-left p-5 flex items-center justify-between bg-gray-800 hover:bg-gray-700 transition-colors" onclick="toggleFaq(this)">
+          <span class="text-white font-medium">Apa saja yang dipersiapkan untuk tes seleksi?</span>
+          <i data-feather="chevron-down" class="text-[#E2C665] faq-icon transition-transform"></i>
+        </button>
+        <div class="faq-content p-5 text-gray-300 hidden">
+          <p>
+            Tes seleksi meliputi: Tes logika dan penalaran, dan Kalibrasi Nilai Raport.
+            Persiapkan diri dengan melatih soal logika dan memahami perkembangan teknologi AI terkini.
+          </p>
+        </div>
+      </div>
 
-                        <!-- Dosen 4 -->
-                        <div class="w-1/2 md:w-1/3 lg:w-1/5 px-2 mb-8 mt-16 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out"
-                            style="z-index: 7; margin-left: -10px;">
-                            <div class="relative h-64 md:h-80 overflow-hidden bg-blue-600 group">
-                                <img src="assets/images/dosen/Ranti-Geotalia.png"
-                                    alt="Dr. Dani Putra"
-                                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-4">
-                                    <h3 class="text-white font-bold">Ranti Geotalia, M.Kom</h3>
-                                    <p class="text-white text-sm">Robotics & AI</p>
-                                </div>
-                            </div>
-                        </div>
+      <!-- FAQ 4 -->
+      <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-md group transition-all duration-300 hover:-translate-y-1">
+        <button class="w-full text-left p-5 flex items-center justify-between bg-gray-800 hover:bg-gray-700 transition-colors" onclick="toggleFaq(this)">
+          <span class="text-white font-medium">Bagaimana sistem perkuliahan di PLAI BMD?</span>
+          <i data-feather="chevron-down" class="text-[#E2C665] faq-icon transition-transform"></i>
+        </button>
+        <div class="faq-content p-5 text-gray-300 hidden">
+          <p>
+            PLAI BMD menerapkan sistem perkuliahan berbasis <strong>Project-Based Learning</strong> dengan 70% praktek dan 30% teori.
+            Kelas berlangsung 5 hari dalam seminggu dengan durasi 8 jam per hari.
+            Mahasiswa akan banyak mengerjakan proyek nyata dan berkolaborasi dengan industri.
+          </p>
+        </div>
+      </div>
 
-                        <!-- Dosen 5 -->
-                        <div class="w-1/2 md:w-1/3 lg:w-1/5 px-2 mb-8 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out"
-                            style="z-index: 6; margin-left: -10px;">
-                            <div class="relative h-72 md:h-64 overflow-hidden bg-purple-600 group">
-                                <img src="assets/images/dosen/Sal-Sabila-Wijayanti.png"
-                                    alt="Dr. Eva Susanti"
-                                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-4">
-                                    <h3 class="text-white font-bold">Dr. Eva Susanti</h3>
-                                    <p class="text-white text-sm">Data Science</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <!-- FAQ 5 -->
+      <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-md group transition-all duration-300 hover:-translate-y-1">
+        <button class="w-full text-left p-5 flex items-center justify-between bg-gray-800 hover:bg-gray-700 transition-colors" onclick="toggleFaq(this)">
+          <span class="text-white font-medium">Apakah mahasiswa akan membuat produk atau startup sendiri di PLAI BMD?</span>
+          <i data-feather="chevron-down" class="text-[#E2C665] faq-icon transition-transform"></i>
+        </button>
+        <div class="faq-content p-5 text-gray-300 hidden">
+          <p>
+            Ya, mahasiswa PLAI BMD akan dibimbing untuk membuat produk digital sejak tahun pertama. Tersedia program inkubasi startup, bootcamp, dan bimbingan dari praktisi industri. Selain itu, mahasiswa juga berkesempatan mengembangkan produk kolaboratif bersama mitra industri ataupun mandiri crowdfund yang siap di-launch ke pasar.
+          </p>
+        </div>
+      </div>
 
-                    <!-- Second Row -->
-                    <div class="flex flex-wrap justify-center -mx-2 -mt-12 md:-mt-24">
-                        <!-- Dosen 6 -->
-                        <div class="w-1/2 md:w-1/3 lg:w-1/5 px-2 mb-8 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out"
-                            style="z-index: 5;">
-                            <div class="relative h-72 md:h-80 overflow-hidden bg-yellow-500 group">
-                                <img src="assets/images/dosen/Sriyati.png"
-                                    alt="Dr. Ferdi Rahman"
-                                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-4">
-                                    <h3 class="text-white font-bold">Dr. Ferdi Rahman</h3>
-                                    <p class="text-white text-sm">Machine Learning</p>
-                                </div>
-                            </div>
-                        </div>
+      <!-- FAQ 6 -->
+      <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-md group transition-all duration-300 hover:-translate-y-1">
+        <button class="w-full text-left p-5 flex items-center justify-between bg-gray-800 hover:bg-gray-700 transition-colors" onclick="toggleFaq(this)">
+          <span class="text-white font-medium">Di mana lokasi kampus PLAI BMD berada?</span>
+          <i data-feather="chevron-down" class="text-[#E2C665] faq-icon transition-transform"></i>
+        </button>
+        <div class="faq-content p-5 text-gray-300 hidden">
+          <p>
+            Kampus PLAI BMD berlokasi di Kota Yogyakarta, salah satu kota pendidikan terbaik di Indonesia. Akses mudah, lingkungan belajar kondusif, dan dikelilingi komunitas teknologi yang aktif.
+          </p>
+        </div>
+      </div>
 
-                        <!-- Dosen 7 -->
-                        <div class="w-1/2 md:w-1/3 lg:w-1/5 px-2 mb-8 mt-12 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out"
-                            style="z-index: 4; margin-left: -10px;">
-                            <div class="relative h-64 md:h-72 overflow-hidden bg-pink-500 group">
-                                <img src="assets/images/dosen/Anip-Moniva.png"
-                                    alt="Dr. Gita Pratiwi"
-                                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-4">
-                                    <h3 class="text-white font-bold">Dr. Gita Pratiwi</h3>
-                                    <p class="text-white text-sm">AI Ethics</p>
-                                </div>
-                            </div>
-                        </div>
+    </div>
+  </div>
 
-                        <!-- Dosen 8 -->
-                        <div class="w-1/2 md:w-1/3 lg:w-1/5 px-2 mb-8 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out"
-                            style="z-index: 3; margin-left: -10px;">
-                            <div class="relative h-80 md:h-96 overflow-hidden bg-teal-500 group">
-                                <img src="assets/images/dosen/Anip-Moniva.png"
-                                    alt="Dr. Hadi Santoso"
-                                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-4">
-                                    <h3 class="text-white font-bold">Dr. Hadi Santoso</h3>
-                                    <p class="text-white text-sm">Reinforcement Learning</p>
-                                </div>
-                            </div>
-                        </div>
+  <!-- Feather icons and toggle script -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
 
-                        <!-- Dosen 9 -->
-                        <div class="w-1/2 md:w-1/3 lg:w-1/5 px-2 mb-8 mt-16 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out"
-                            style="z-index: 2; margin-left: -10px;">
-                            <div class="relative h-64 md:h-80 overflow-hidden bg-amber-500 group">
-                                <img src="assets/images/dosen/Anip-Moniva.png"
-                                    alt="Dr. Indah Wulandari"
-                                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-4">
-                                    <h3 class="text-white font-bold">Dr. Indah Wulandari</h3>
-                                    <p class="text-white text-sm">AI for Healthcare</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Dosen 10 -->
-                        <div class="w-1/2 md:w-1/3 lg:w-1/5 px-2 mb-8 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out"
-                            style="z-index: 1; margin-left: -10px;">
-                            <div class="relative h-72 md:h-64 overflow-hidden bg-cyan-600 group">
-                                <img src="assets/images/dosen/Anip-Moniva.png"
-                                    alt="Dr. Joko Purnomo"
-                                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-4">
-                                    <h3 class="text-white font-bold">Dr. Joko Purnomo</h3>
-                                    <p class="text-white text-sm">Large Language Models</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
+    function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('.faq-icon');
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    }
+  </script>
+</section>
