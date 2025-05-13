@@ -28,17 +28,17 @@
         </div>
         <!-- Right side: image and badge box -->
         <div class="flex items-center justify-center xl:justify-end">
-            <div class="relative">
-                <div class="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-400 rounded-lg blur opacity-25"></div>
-                <div class="relative bg-gray-800 p-2 rounded-lg border border-gray-700">
-                    <div class="flex flex-col items-center justify-center text-center py-3">
-                        <div class="mb-1">
-                            <span class="text-[#E2C665] font-bold text-lg">PLAI</span><span class="px-0.5"></span><span class="text-white font-bold text-lg">BMD</span>
+            <div class="relative w-full max-w-md">
+                <div class="absolute -inset-1.5 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-400 rounded-lg blur opacity-25"></div>
+                <div class="relative bg-gray-800 p-4 rounded-lg border border-gray-700 w-full">
+                    <div class="flex flex-col items-center justify-center text-center py-6 px-4 h-full">
+                        <div class="mb-3">
+                            <span class="text-[#E2C665] font-bold text-2xl">PLAI</span><span class="px-1"></span><span class="text-white font-bold text-2xl">BMD</span>
                         </div>
-                        <p class="text-sm text-white font-bold mb-1">Student Admission</p>
-                        <p class="text-xs text-gray-300 mb-1">BATCH 2025</p>
-                        <div class="w-8 h-0.5 bg-[#E2C665] mb-1"></div>
-                        <p class="text-xs text-gray-300">Future AI Talents Start Here</p>
+                        <p class="text-base text-white font-bold mb-3">Student Admission</p>
+                        <p class="text-sm text-gray-300 mb-3">BATCH 2025</p>
+                        <div class="w-16 h-0.5 bg-[#E2C665] mb-3"></div>
+                        <p class="text-sm text-gray-300 mt-2">Future AI Talents Start Here</p>
                     </div>
                 </div>
             </div>
