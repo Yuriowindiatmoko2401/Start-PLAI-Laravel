@@ -1,185 +1,166 @@
-<!-- Tuition Fee Section -->
-<section id="tuition" class="py-16 bg-gray-900">
-  <div class="container mx-auto px-4 md:px-8">
-    <h2 class="text-3xl font-bold text-center text-white mb-6">
-      💰 Biaya Kuliah PLAI BMD
-    </h2>
-    <p class="text-center text-gray-400 mb-10 max-w-3xl mx-auto">Biaya per semester untuk setiap program studi selama 4 tahun masa studi</p>
-
-    <div class="overflow-x-auto bg-white rounded-lg shadow-lg">
-      <style>
-        .fee-table {
-          width: 100%;
-          border-collapse: collapse;
-          font-family: 'Rubik', sans-serif;
-          font-size: 14px;
-        }
-        
-        .fee-table th, .fee-table td {
-          border: 1px solid #ddd;
-          padding: 8px 12px;
-          text-align: center;
-        }
-        
-        .fee-table th {
-          font-weight: 500;
-          line-height: 1.2;
-        }
-        
-        .blue-bg {
-          background-color: #0B3692;
-        }
-        
-        .gold-bg {
-          background-color: #E2C665;
-        }
-        
-        .dark-bg {
-          background-color: #111827;
-        }
-        
-        .white-text {
-          color: #ffffff;
-        }
-        
-        .black-text {
-          color: #000000;
-        }
-        
-        .bold {
-          font-weight: bold;
-        }
-        
-        .fee-table tbody td:first-child {
-          text-align: left;
-        }
-      </style>
-
-      <table class="fee-table">
-        <thead>
-          <tr>
-            <th rowspan="4" class="blue-bg white-text align-middle w-1/4">Program Studi</th>
-            <th colspan="4" class="blue-bg white-text">TAHUN 1</th>
-            <th colspan="4" class="blue-bg white-text">TAHUN 2</th>
-            <th colspan="4" class="blue-bg white-text">TAHUN 3</th>
-            <th colspan="4" class="blue-bg white-text">TAHUN 4</th>
-            <th rowspan="4" class="dark-bg white-text align-middle">TOTAL</th>
-          </tr>
-          <tr>
-            <th colspan="2" class="blue-bg white-text">SEMESTER GANJIL</th>
-            <th colspan="2" class="blue-bg white-text">SEMESTER GENAP</th>
-            <th colspan="2" class="blue-bg white-text">SEMESTER GANJIL</th>
-            <th colspan="2" class="blue-bg white-text">SEMESTER GENAP</th>
-            <th colspan="2" class="blue-bg white-text">SEMESTER GANJIL</th>
-            <th colspan="2" class="blue-bg white-text">SEMESTER GENAP</th>
-            <th colspan="2" class="blue-bg white-text">SEMESTER GANJIL</th>
-            <th colspan="2" class="blue-bg white-text">SEMESTER GENAP</th>
-          </tr>
-          <tr>
-            <th colspan="2" class="blue-bg white-text">ANGSURAN</th>
-            <th colspan="2" class="blue-bg white-text">ANGSURAN</th>
-            <th colspan="2" class="blue-bg white-text">ANGSURAN</th>
-            <th colspan="2" class="blue-bg white-text">ANGSURAN</th>
-            <th colspan="2" class="blue-bg white-text">ANGSURAN</th>
-            <th colspan="2" class="blue-bg white-text">ANGSURAN</th>
-            <th colspan="2" class="blue-bg white-text">ANGSURAN</th>
-            <th colspan="2" class="blue-bg white-text">ANGSURAN</th>
-          </tr>
-          <tr>
-            <th class="blue-bg white-text">I</th>
-            <th class="blue-bg white-text">II</th>
-            <th class="blue-bg white-text">III</th>
-            <th class="blue-bg white-text">IV</th>
-            <th class="blue-bg white-text">I</th>
-            <th class="blue-bg white-text">II</th>
-            <th class="blue-bg white-text">III</th>
-            <th class="blue-bg white-text">IV</th>
-            <th class="blue-bg white-text">I</th>
-            <th class="blue-bg white-text">II</th>
-            <th class="blue-bg white-text">III</th>
-            <th class="blue-bg white-text">IV</th>
-            <th class="blue-bg white-text">I</th>
-            <th class="blue-bg white-text">II</th>
-            <th class="blue-bg white-text">III</th>
-            <th class="blue-bg white-text">IV</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- AI & Robotika -->
-          <tr>
-            <td class="font-medium">AI & Robotika</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td class="font-bold">120.000.000</td>
-          </tr>
-          
-          <!-- Sains Data Terapan -->
-          <tr>
-            <td class="font-medium">Sains Data Terapan</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td class="font-bold">120.000.000</td>
-          </tr>
-          
-          <!-- Keamanan Siber -->
-          <tr>
-            <td class="font-medium">Keamanan Siber</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td>7.500.000</td>
-            <td class="font-bold">120.000.000</td>
-          </tr>
-        </tbody>
-      </table>
+<!-- Tuition Fee Section with Glassmorphism Cards -->
+<section id="tuition" class="py-20 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+  <!-- Decorative background elements -->
+  <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+  <div class="absolute top-1/2 -left-24 w-80 h-80 bg-[#E2C665] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
+  <div class="absolute -bottom-24 right-1/3 w-72 h-72 bg-indigo-600 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-blob animation-delay-4000"></div>
+  
+  <div class="container mx-auto px-4 md:px-8 relative z-10">
+    <!-- Section header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center justify-center p-2 bg-blue-900 bg-opacity-30 backdrop-blur-sm rounded-xl mb-4">
+        <span class="text-[#E2C665] text-xl">✨</span>
+      </div>
+      <h2 class="text-4xl font-bold text-white mb-4">
+        Investasi Pendidikan
+      </h2>
+      <p class="text-gray-400 max-w-2xl mx-auto text-lg">Biaya perkuliahan untuk membentuk talenta digital masa depan</p>
     </div>
+
+    <!-- Card Tabs Container -->
+    <div class="max-w-5xl mx-auto">
+      <!-- Program Cards - Grid for desktop, column for mobile -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        
+        <!-- AI & Robotika Card -->
+        <div class="group flex flex-col bg-gray-900 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-2xl overflow-hidden shadow-xl border border-gray-800 hover:border-[#E2C665] transition-all duration-300 hover:shadow-[#E2C665]/10 hover:shadow-xl hover:-translate-y-1">
+          <div class="p-6 bg-gradient-to-br from-[#0B3692]/50 to-black flex items-center justify-between">
+            <h3 class="text-xl font-bold text-white">AI & Robotika</h3>
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#E2C665] to-yellow-500 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <span class="text-2xl">💡</span>
+            </div>
+          </div>
+          
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-6 pb-4 border-b border-gray-800">
+                <span class="text-gray-400">Biaya per semester</span>
+                <span class="text-xl font-bold text-white">Rp 15.000.000</span>
+              </div>
+              
+              <div class="space-y-3 mb-6">
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Durasi program</span>
+                  <span class="text-white">8 semester (4 tahun)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Total biaya</span>
+                  <span class="text-[#E2C665] font-bold">Rp 120.000.000</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-blue-900 bg-opacity-20 rounded-xl p-4 mt-2">
+              <p class="text-sm text-gray-400">Program unggulan dengan fokus pada kecerdasan buatan dan teknologi robotika canggih.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Sains Data Terapan Card -->
+        <div class="group flex flex-col bg-gray-900 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-2xl overflow-hidden shadow-xl border border-gray-800 hover:border-[#E2C665] transition-all duration-300 hover:shadow-[#E2C665]/10 hover:shadow-xl hover:-translate-y-1">
+          <div class="p-6 bg-gradient-to-br from-[#0B3692]/50 to-black flex items-center justify-between">
+            <h3 class="text-xl font-bold text-white">Sains Data Terapan</h3>
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#E2C665] to-yellow-500 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <span class="text-2xl">📊</span>
+            </div>
+          </div>
+          
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-6 pb-4 border-b border-gray-800">
+                <span class="text-gray-400">Biaya per semester</span>
+                <span class="text-xl font-bold text-white">Rp 15.000.000</span>
+              </div>
+              
+              <div class="space-y-3 mb-6">
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Durasi program</span>
+                  <span class="text-white">8 semester (4 tahun)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Total biaya</span>
+                  <span class="text-[#E2C665] font-bold">Rp 120.000.000</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-blue-900 bg-opacity-20 rounded-xl p-4 mt-2">
+              <p class="text-sm text-gray-400">Pendidikan analitik data dengan teknologi terkini untuk solusi masalah dunia nyata.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Keamanan Siber Card -->
+        <div class="group flex flex-col bg-gray-900 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-2xl overflow-hidden shadow-xl border border-gray-800 hover:border-[#E2C665] transition-all duration-300 hover:shadow-[#E2C665]/10 hover:shadow-xl hover:-translate-y-1">
+          <div class="p-6 bg-gradient-to-br from-[#0B3692]/50 to-black flex items-center justify-between">
+            <h3 class="text-xl font-bold text-white">Keamanan Siber</h3>
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#E2C665] to-yellow-500 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <span class="text-2xl">🔒</span>
+            </div>
+          </div>
+          
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-6 pb-4 border-b border-gray-800">
+                <span class="text-gray-400">Biaya per semester</span>
+                <span class="text-xl font-bold text-white">Rp 15.000.000</span>
+              </div>
+              
+              <div class="space-y-3 mb-6">
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Durasi program</span>
+                  <span class="text-white">8 semester (4 tahun)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Total biaya</span>
+                  <span class="text-[#E2C665] font-bold">Rp 120.000.000</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-blue-900 bg-opacity-20 rounded-xl p-4 mt-2">
+              <p class="text-sm text-gray-400">Menjadi pakar keamanan digital dengan kurikulum komprehensif dan praktik industri.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Perks and Notes -->
+      <div class="bg-gradient-to-r from-gray-900 to-blue-900/20 rounded-xl p-6 backdrop-filter backdrop-blur-sm border border-gray-800 mb-10">
+        <h3 class="text-[#E2C665] font-semibold mb-3 flex items-center">
+          <span class="mr-2">✓</span> Termasuk dalam Biaya Kuliah
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="flex items-start">  
+            <div class="text-white mr-2">•</div>
+            <p class="text-gray-300 text-sm">Akses ke laboratorium teknologi canggih</p>
+          </div>
+          <div class="flex items-start">  
+            <div class="text-white mr-2">•</div>
+            <p class="text-gray-300 text-sm">Materi pembelajaran digital terupdate</p>
+          </div>
+          <div class="flex items-start">  
+            <div class="text-white mr-2">•</div>
+            <p class="text-gray-300 text-sm">Sertifikasi industri internasional</p>
+          </div>
+          <div class="flex items-start">  
+            <div class="text-white mr-2">•</div>
+            <p class="text-gray-300 text-sm">Akses jaringan alumni dan industri</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-400 mt-4">* Biaya kuliah dapat dibayarkan dalam cicilan per semester. Tersedia beasiswa prestasi bagi mahasiswa berprestasi.</p>
+      </div>
     
-    <p class="text-sm text-gray-400 mt-4 text-center">* Nilai tertera adalah biaya kuliah per semester. Total biaya sudah termasuk seluruh biaya perkuliahan selama 4 tahun masa studi.</p>
-    
-    <div class="text-center mt-10">
-      <a href="#form" class="inline-block bg-[#E2C665] text-black font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition transform hover:-translate-y-1">
-        Daftar Sekarang
-      </a>
+      <!-- CTA Button -->
+      <div class="text-center">
+        <a href="#form" class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#E2C665] to-yellow-400 text-black font-bold rounded-full transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#E2C665]/20 focus:outline-none focus:ring-2 focus:ring-[#E2C665] focus:ring-offset-2 focus:ring-offset-gray-900">
+          <span>Daftar Sekarang</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </section>

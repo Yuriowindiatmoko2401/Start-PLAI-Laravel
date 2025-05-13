@@ -1,5 +1,5 @@
 <!-- Proses Pendaftaran Slider Section -->
-<div class="slider-1 py-32 bg-gray-900" id="proses">
+<div class="slider-1 py-32 bg-gray-900" id="process">
   <div class="container px-4 sm:px-8">
     <h2 class="mb-12 text-center lg:max-w-xl lg:mx-auto text-[#E2C665] font-bold text-[2.125rem] leading-[2.625rem] tracking-[-0.4px]">
       Proses Pendaftaran
