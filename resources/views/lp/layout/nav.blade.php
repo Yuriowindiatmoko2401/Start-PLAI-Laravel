@@ -1,5 +1,5 @@
         <!-- Navigation -->
-        <nav class="fixed w-full bg-black bg-opacity-90 border-b border-gray-800 z-50 font-['Rubik',sans-serif]">
+        <nav class="fixed w-full bg-black bg-opacity-90 z-50 font-['Rubik',sans-serif]">
             <div class="container mx-auto px-4 py-3 flex items-center justify-between">
                 <!-- Image Logo -->
                 <a href="#" class="flex items-center">
@@ -27,7 +27,7 @@
             </div>
 
             <!-- Mobile menu -->
-            <div class="hidden md:hidden bg-gray-900 border-b border-gray-800" id="mobileMenu">
+            <div class="hidden md:hidden bg-gray-900" id="mobileMenu">
                 <div class="container mx-auto px-4 py-2">
                     <ul class="pl-0 mb-0 space-y-2 list-none">
                         <li><a href="#admissions" class="block text-white text-[14px] hover:text-[#E2C665] transition py-[10px] px-[10px]">Admisi</a></li>
