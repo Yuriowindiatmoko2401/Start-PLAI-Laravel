@@ -1,64 +1,77 @@
-    <!-- Testimonials -->
-    <div class="slider-1 py-32 radial-three-step-reason" id="porto">
-        <div class="container px-4 sm:px-8">
-            <h2
-                class="mb-12 text-center lg:max-w-xl lg:mx-auto text-[#E2C665] font-bold text-[2.125rem] leading-[2.625rem] tracking-[-0.4px]">
-                Proyek Bersama Industri</h2>
-            {{-- Dibuat popup modal munculin captur --}}
-            <!-- Card Slider -->
-            <div class="slider-container">
-                <div class="swiper-container card-slider">
-                    <div class="swiper-wrapper">
+<!-- Proses Pendaftaran Slider Section -->
+<div class="slider-1 py-32 bg-gray-900" id="proses">
+  <div class="container px-4 sm:px-8">
+    <h2 class="mb-12 text-center lg:max-w-xl lg:mx-auto text-[#E2C665] font-bold text-[2.125rem] leading-[2.625rem] tracking-[-0.4px]">
+      Proses Pendaftaran
+    </h2>
 
-                        <!-- Slide -->
-                        <div class="swiper-slide text-white">
-                            <div class="card cursor-pointer" data-modal-target="modal-1">
-                                <img class="card-image" src="assets/images/logo/santun1-no-bg.png" alt="alternative" />
-                                <div class="card-body">
-                                    <p class="testimonial-author text-[#E2C665]">Aplikasi SANTUN</p>
-                                    <p class="italic mb-3">Sebuah sistem AI yang secara otomatis mendeteksi dan mengubah
-                                        kata-kata kasar menjadi bahasa yang lebih santun dalam percakapan digital
-                                        sehari-hari.</p>
-                                </div>
-                            </div>
-                        </div> <!-- end of swiper-slide -->
-                        <!-- end of slide -->
-                        <!-- Slide -->
-                        <div class="swiper-slide text-white">
-                            <div class="card cursor-pointer" data-modal-target="modal-2">
-                                <img class="card-image" src="assets/images/logo/ROS13.png" alt="alternative" />
-                                <div class="card-body">
-                                    <p class="testimonial-author text-[#E2C665]">Roket AI</p>
-                                    <p class="italic mb-3">Roket mini yang dilengkapi AI untuk mencari target secara
-                                        mandiri, menjalankan misi, dan kembali ke titik awal tanpa kontrol manual.</p>
-                                </div>
-                            </div>
-                        </div> <!-- end of swiper-slide -->
-                        <!-- end of slide -->
+    <!-- Card Slider -->
+    <div class="slider-container">
+      <div class="swiper-container card-slider">
+        <div class="swiper-wrapper">
 
-                        <!-- Slide -->
-                        <div class="swiper-slide text-white">
-                            <div class="card cursor-pointer" data-modal-target="modal-3">
-                                <img class="card-image" src="assets/images/logo/santun1-no-bg.png" alt="alternative" />
-                                <div class="card-body">
-                                    <p class="testimonial-author text-[#E2C665]">Mobil Veloque</p>
-                                    <p class="italic mb-3">Mobil listrik tanpa pengemudi yang digerakkan oleh sistem AI,
-                                        mampu membaca situasi dan mengambil keputusan saat bergerak secara mandiri.</p>
-                                </div>
-                            </div>
-                        </div> <!-- end of swiper-slide -->
-                        <!-- end of slide -->
-                    </div> <!-- end of swiper-wrapper -->
+          <!-- Step 1 -->
+          <div class="swiper-slide text-white">
+            <div class="card p-6 bg-gray-800 rounded-lg text-center hover:shadow-lg transition-transform">
+              <div class="w-12 h-12 mx-auto mb-4 bg-[#E2C665] rounded-full text-black font-bold flex items-center justify-center">
+                1
+              </div>
+              <h4 class="text-[#E2C665] font-semibold mb-2">Pendaftaran Online</h4>
+              <p class="text-sm text-gray-300">Isi formulir dan upload dokumen bukti pendaftaran dan persyaratan</p>
+            </div>
+          </div>
 
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <!-- end of add arrows -->
+          <!-- Step 2 -->
+          <div class="swiper-slide text-white">
+            <div class="card p-6 bg-gray-800 rounded-lg text-center hover:shadow-lg transition-transform">
+              <div class="w-12 h-12 mx-auto mb-4 bg-[#E2C665] rounded-full text-black font-bold flex items-center justify-center">
+                2
+              </div>
+              <h4 class="text-[#E2C665] font-semibold mb-2">Verifikasi</h4>
+              <p class="text-sm text-gray-300">Pengecekan kelengkapan dokumen</p>
+            </div>
+          </div>
 
-                </div> <!-- end of swiper-container -->
-            </div> <!-- end of slider-container -->
-            <!-- end of card slider -->
+          <!-- Step 3 -->
+          <div class="swiper-slide text-white">
+            <div class="card p-6 bg-gray-800 rounded-lg text-center hover:shadow-lg transition-transform">
+              <div class="w-12 h-12 mx-auto mb-4 bg-[#E2C665] rounded-full text-black font-bold flex items-center justify-center">
+                3
+              </div>
+              <h4 class="text-[#E2C665] font-semibold mb-2">Tes Seleksi</h4>
+              <p class="text-sm text-gray-300">Tes logika dan wawancara</p>
+            </div>
+          </div>
 
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-1 -->
-    <!-- end of testimonials -->
+          <!-- Step 4 -->
+          <div class="swiper-slide text-white">
+            <div class="card p-6 bg-gray-800 rounded-lg text-center hover:shadow-lg transition-transform">
+              <div class="w-12 h-12 mx-auto mb-4 bg-[#E2C665] rounded-full text-black font-bold flex items-center justify-center">
+                4
+              </div>
+              <h4 class="text-[#E2C665] font-semibold mb-2">Pengumuman</h4>
+              <p class="text-sm text-gray-300">Hasil seleksi via email</p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="swiper-slide text-white">
+            <div class="card p-6 bg-gray-800 rounded-lg text-center hover:shadow-lg transition-transform">
+              <div class="w-12 h-12 mx-auto mb-4 bg-[#E2C665] rounded-full text-black font-bold flex items-center justify-center">
+                5
+              </div>
+              <h4 class="text-[#E2C665] font-semibold mb-2">Pembayaran</h4>
+              <p class="text-sm text-gray-300">Registrasi ulang dan pembayaran biaya pendidikan</p>
+            </div>
+          </div>
+
+        </div> <!-- end swiper-wrapper -->
+
+        <!-- Swiper navigation arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+      </div> <!-- end swiper-container -->
+    </div> <!-- end slider-container -->
+  </div> <!-- end container -->
+</div> <!-- end slider-1 -->
