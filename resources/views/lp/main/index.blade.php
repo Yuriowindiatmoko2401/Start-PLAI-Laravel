@@ -12,6 +12,4 @@
     @include('lp.main.lecture')
 
     @include('lp.main.partnership')
-
-    <!-- @include('lp.main.cta') -->
 @endsection

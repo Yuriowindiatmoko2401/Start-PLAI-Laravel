@@ -33,9 +33,14 @@
           
           <div class="p-6 flex-grow flex flex-col justify-between">
             <div>
-              <div class="flex justify-between items-center mb-6 pb-4 border-b border-gray-800">
+              <div class="flex justify-between items-center mb-3 pb-3 border-b border-gray-800">
                 <span class="text-gray-400">Biaya per semester</span>
-                <span class="text-xl font-bold text-white">Rp 15.000.000</span>
+                <span class="font-semibold text-white">Rp 15.000.000</span>
+              </div>
+              
+              <div class="flex justify-between items-center mb-5 pb-3 border-b border-gray-700">
+                <span class="text-gray-400">Biaya Angsuran Per-Semester 2x</span>
+                <span class="font-semibold text-white">Rp 7.500.000</span>
               </div>
               
               <div class="space-y-3 mb-6">
@@ -67,9 +72,14 @@
           
           <div class="p-6 flex-grow flex flex-col justify-between">
             <div>
-              <div class="flex justify-between items-center mb-6 pb-4 border-b border-gray-800">
+              <div class="flex justify-between items-center mb-3 pb-3 border-b border-gray-800">
                 <span class="text-gray-400">Biaya per semester</span>
-                <span class="text-xl font-bold text-white">Rp 15.000.000</span>
+                <span class="font-semibold text-white">Rp 15.000.000</span>
+              </div>
+              
+              <div class="flex justify-between items-center mb-5 pb-3 border-b border-gray-700">
+                <span class="text-gray-400">Biaya Angsuran Per-Semester 2x</span>
+                <span class="font-semibold text-white">Rp 7.500.000</span>
               </div>
               
               <div class="space-y-3 mb-6">
@@ -101,9 +111,14 @@
           
           <div class="p-6 flex-grow flex flex-col justify-between">
             <div>
-              <div class="flex justify-between items-center mb-6 pb-4 border-b border-gray-800">
+              <div class="flex justify-between items-center mb-3 pb-3 border-b border-gray-800">
                 <span class="text-gray-400">Biaya per semester</span>
-                <span class="text-xl font-bold text-white">Rp 15.000.000</span>
+                <span class="font-semibold text-white">Rp 15.000.000</span>
+              </div>
+              
+              <div class="flex justify-between items-center mb-5 pb-3 border-b border-gray-700">
+                <span class="text-gray-400">Biaya Angsuran Per-Semester 2x</span>
+                <span class="font-semibold text-white">Rp 7.500.000</span>
               </div>
               
               <div class="space-y-3 mb-6">
@@ -149,7 +164,7 @@
             <p class="text-gray-300 text-sm">Akses jaringan alumni dan industri</p>
           </div>
         </div>
-        <p class="text-sm text-gray-400 mt-4">* Biaya kuliah dapat dibayarkan dalam cicilan per semester. Tersedia beasiswa prestasi bagi mahasiswa berprestasi.</p>
+        <p class="text-sm text-gray-400 mt-4">* Biaya kuliah dapat dibayarkan dalam cicilan per semester.</p>
       </div>
     
       <!-- CTA Button -->
