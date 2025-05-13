@@ -7,7 +7,7 @@
         <span class="inline-block px-2 py-1 bg-[#E2C665] text-black rounded-md mr-3 text-xl">📋</span>
         Persyaratan
       </h2>
-      <p class="text-gray-400 max-w-2xl mx-auto">Berikut adalah persyaratan untuk bergabung dengan PLAI BMD</p>
+      <p class="text-gray-400 max-w-2xl mx-auto">Berikut adalah persyaratan untuk bergabung menjadi Mahasiswa PLAI BMD</p>
     </div>
 
     <!-- Requirements Cards Grid -->
