@@ -13,5 +13,5 @@
 
     @include('lp.main.partnership')
 
-    @include('lp.main.cta')
+    <!-- @include('lp.main.cta') -->
 @endsection

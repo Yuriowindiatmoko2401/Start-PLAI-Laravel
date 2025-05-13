@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penerimaan Mahasiswa Baru - PLAI BMD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-zinc-950 text-white font-inter">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black bg-opacity-90 border-b border-gray-800 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="https://dev.plai.ac.id/assets/images/logo/PLAI-BMD%20-%20HORIZONTAL.png" alt="PLAI BMD Logo" class="h-8">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#admissions" class="text-gray-300 hover:text-[#E2C665] transition">Admisi</a>
+                <a href="#requirements" class="text-gray-300 hover:text-[#E2C665] transition">Persyaratan</a>
+                <a href="#process" class="text-gray-300 hover:text-[#E2C665] transition">Proses</a>
+                <a href="#scholarship" class="text-gray-300 hover:text-[#E2C665] transition">Beasiswa</a>
+                <a href="#faq" class="text-gray-300 hover:text-[#E2C665] transition">FAQ</a>
+            </div>
+            <button class="md:hidden focus:outline-none" id="menuBtn">
+                <i data-feather="menu" class="text-white"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden bg-gray-900 border-b border-gray-800" id="mobileMenu">
+            <div class="container mx-auto px-4 py-2 space-y-3">
+                <a href="#admissions" class="block text-gray-300 hover:text-[#E2C665] transition py-2">Admisi</a>
+                <a href="#requirements" class="block text-gray-300 hover:text-[#E2C665] transition py-2">Persyaratan</a>
+                <a href="#process" class="block text-gray-300 hover:text-[#E2C665] transition py-2">Proses</a>
+                <a href="#scholarship" class="block text-gray-300 hover:text-[#E2C665] transition py-2">Beasiswa</a>
+                <a href="#faq" class="block text-gray-300 hover:text-[#E2C665] transition py-2">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-24 md:pt-32 pb-16 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4">
+                        Sementara yang Lain Masih <span class="text-[#E2C665]">Bingung</span>, 
+                        Kamu Sudah Siap <span class="text-[#E2C665]">Diperhitungkan</span>
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-8">
+                        Mahir dalam teknologi Artificial Intelligence dan menjadi talenta digital yang siap menjawab tantangan industri masa depan
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#form" class="btn-cta bg-[#E2C665] hover:bg-yellow-400 text-black font-bold py-3 px-8 rounded-md transition transform hover:-translate-y-1 text-center">
+                            Daftar Sekarang
+                        </a>
+                        <a href="#" class="btn-cta border-2 border-gray-300 hover:border-yellow-400 text-white hover:text-[#E2C665] font-bold py-3 px-8 rounded-md transition text-center">
+                            Konsultasi GRATIS
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="relative">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-400 rounded-lg blur opacity-25"></div>
+                        <div class="relative bg-gray-800 p-2 rounded-lg border border-gray-700">
+                            <div class="flex flex-col items-center justify-center text-center py-3">
+                                <div class="mb-1">
+                                    <span class="text-[#E2C665] font-bold text-lg">PLAI</span><span class="px-0.5"></span><span class="text-white font-bold text-lg">BMD</span>
+                                </div>
+                                <p class="text-sm text-white font-bold mb-1">Student Admission</p>
+                                <p class="text-xs text-gray-300 mb-1">BATCH 2025</p>
+                                <div class="w-8 h-0.5 bg-[#E2C665] mb-1"></div>
+                                <p class="text-xs text-gray-300">Future AI Talents Start Here</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Calendar Section -->
+    <section id="admissions" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="inline-block px-2 py-1 bg-[#E2C665] text-black rounded-md mr-2">📆</span>
+                Kalender Penerimaan Mahasiswa Baru
+            </h2>
+            
+            <div class="flex flex-col lg:flex-row">
+                <!-- Side menu -->
+                <div class="lg:w-1/4 mb-8 lg:mb-0 lg:pr-8">
+                    <div id="side-menu" class="tech-card rounded-lg p-4">
+                        <ul class="space-y-2">
+                            <li class="p-2 bg-gray-800 rounded-md text-[#E2C665] font-medium">
+                                <a href="#admissions" class="flex items-center">
+                                    <i data-feather="calendar" class="mr-2 h-5 w-5"></i>
+                                    <span>Kalender</span>
+                                </a>
+                            </li>
+                            <li class="p-2 hover:bg-gray-800 rounded-md transition">
+                                <a href="#requirements" class="flex items-center">
+                                    <i data-feather="clipboard" class="mr-2 h-5 w-5"></i>
+                                    <span>Persyaratan</span>
+                                </a>
+                            </li>
+                            <li class="p-2 hover:bg-gray-800 rounded-md transition">
+                                <a href="#process" class="flex items-center">
+                                    <i data-feather="refresh-cw" class="mr-2 h-5 w-5"></i>
+                                    <span>Proses Pendaftaran</span>
+                                </a>
+                            </li>
+                            <li class="p-2 hover:bg-gray-800 rounded-md transition">
+                                <a href="#scholarship" class="flex items-center">
+                                    <i data-feather="award" class="mr-2 h-5 w-5"></i>
+                                    <span>Biaya Kuliah</span>
+                                </a>
+                            </li>
+                            <li class="p-2 hover:bg-gray-800 rounded-md transition">
+                                <a href="#faq" class="flex items-center">
+                                    <i data-feather="help-circle" class="mr-2 h-5 w-5"></i>
+                                    <span>FAQ</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Admissions info card -->
+                <div class="lg:w-3/4">
+                    <div class="tech-card rounded-lg p-6 relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-2 h-full bg-[#E2C665]"></div>
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-1/3 mb-6 md:mb-0 md:pr-6">
+                                <div class="rounded-lg w-full bg-gray-800 p-2 flex flex-col items-center justify-center text-center h-24 border border-gray-700">
+                                    <span class="text-[#E2C665] font-bold text-base">PLAI <span class="text-white font-bold text-base">BMD</span></span><span class="px-0.5"></span>
+                                    <p class="text-sm text-white font-bold mt-0.5">2025</p>
+                                    <p class="text-xs text-gray-300 mt-1">Student Admissions</p>
+                                </div>
+                                <div class="mt-4">
+                                    <h4 class="text-[#E2C665] text-lg font-semibold mb-2">Pendaftaran Tahun Ajaran 2025/2026</h4>
+                                    <p class="text-sm text-gray-300">Periode: 15 Mei 2025 - 15 September 2025</p>
+                                </div>
+                            </div>
+                            <div class="md:w-2/3">
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="text-[#E2C665] font-medium">Pendaftaran </h4>
+                                        <p class="text-sm text-gray-300">15 Mei 2025 - 15 September 2025</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[#E2C665] font-medium">Seleksi</h4>
+                                        <p class="text-sm text-gray-300">Nilai Rapor dan Tes Online</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[#E2C665] font-medium">Pengumuman</h4>
+                                        <p class="text-sm text-gray-300">Maksimal 3 hari kerja setelah tes</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[#E2C665] font-medium">Biaya Pendaftaran</h4>
+                                        <p class="text-sm text-gray-300">Rp. 350.000</p>
+                                    </div>
+                                </div>
+                                <div class="mt-8">
+                                    <a href="#form" class="btn-cta bg-[#E2C665] hover:bg-yellow-400 text-black font-bold py-3 px-8 rounded-md transition transform hover:-translate-y-1 inline-block">
+                                        Mulai Pendaftaran
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section id="requirements" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="inline-block px-2 py-1 bg-[#E2C665] text-black rounded-md mr-2">📋</span>
+                Persyaratan
+            </h2>
+            
+            <div class="tech-card rounded-lg p-6 max-w-3xl mx-auto">
+                <!-- <p class="text-gray-300 mb-6">Calon mahasiswa PLAI BMD harus memenuhi persyaratan berikut untuk dapat mengikuti seleksi penerimaan mahasiswa baru:</p> -->
+                
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <span class="text-[#E2C665] mr-3">⭐</span>
+                        <p class="text-gray-300">Lulusan SMA/SMK/MA atau Sederajat</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-[#E2C665] mr-3">⭐</span>
+                        <p class="text-gray-300">Nilai Rapor seluruh semester</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-[#E2C665] mr-3">⭐</span>
+                        <p class="text-gray-300">Sertifikat Akademik atau Non Akademik (opsional)</p>
+                    </div>
+                    <!-- <div class="flex items-start">
+                        <span class="text-[#E2C665] mr-3">⭐</span>
+                        <p class="text-gray-300">Dapat mengikuti perkuliahan full-time (5 hari dalam seminggu)</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-[#E2C665] mr-3">⭐</span>
+                        <p class="text-gray-300">Memiliki laptop pribadi dengan spesifikasi minimal: Processor i5 gen 8 / Ryzen 5, RAM 8GB, SSD 256GB</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Process Section -->
+    <section id="process" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6 text-center">
+                <span class="inline-block px-2 py-1 bg-[#E2C665] text-black rounded-md mr-2">🔄</span>
+                Proses Pendaftaran
+            </h2>
+            
+            <div class="flex justify-center mb-8">
+                <div class="inline-flex rounded-md shadow-sm" role="group">
+                    <!-- <button type="button" class="tab-btn active py-2 px-4 text-sm font-medium bg-gray-800 text-white rounded-l-lg rounded-r-lg border border-gray-700 hover:bg-gray-700 focus:z-10 focus:ring-2 focus:ring-yellow-400" data-target="tab-regular">
+                        Jalur Reguler
+                    </button> -->
+                    <!-- <button type="button" class="tab-btn py-2 px-4 text-sm font-medium bg-gray-800 text-white rounded-r-lg border border-gray-700 hover:bg-gray-700 focus:z-10 focus:ring-2 focus:ring-yellow-400" data-target="tab-nontest">
+                        Jalur Non-Test
+                    </button> -->
+                </div>
+            </div>
+            
+            <!-- Regular Track Process -->
+            <div id="tab-regular" class="tab-content block">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                    <div class="tech-card rounded-lg p-4 hover-lift">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-12 h-12 bg-[#E2C665] rounded-full flex items-center justify-center text-black font-bold text-xl">
+                                1
+                            </div>
+                        </div>
+                        <h4 class="text-center text-[#E2C665] font-medium mb-2">Pendaftaran Online</h4>
+                        <p class="text-sm text-gray-300 text-center">Isi formulir dan upload dokumen bukti pendaftaran dan persyaratan</p>
+                    </div>
+                    
+                    <div class="tech-card rounded-lg p-4 hover-lift">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-12 h-12 bg-[#E2C665] rounded-full flex items-center justify-center text-black font-bold text-xl">
+                                2
+                            </div>
+                        </div>
+                        <h4 class="text-center text-[#E2C665] font-medium mb-2">Verifikasi</h4>
+                        <p class="text-sm text-gray-300 text-center">Pengecekan kelengkapan dokumen</p>
+                    </div>
+                    
+                    <div class="tech-card rounded-lg p-4 hover-lift">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-12 h-12 bg-[#E2C665] rounded-full flex items-center justify-center text-black font-bold text-xl">
+                                3
+                            </div>
+                        </div>
+                        <h4 class="text-center text-[#E2C665] font-medium mb-2">Tes Seleksi</h4>
+                        <p class="text-sm text-gray-300 text-center">Tes logika dan wawancara</p>
+                    </div>
+                    
+                    <div class="tech-card rounded-lg p-4 hover-lift">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-12 h-12 bg-[#E2C665] rounded-full flex items-center justify-center text-black font-bold text-xl">
+                                4
+                            </div>
+                        </div>
+                        <h4 class="text-center text-[#E2C665] font-medium mb-2">Pengumuman</h4>
+                        <p class="text-sm text-gray-300 text-center">Hasil seleksi via email</p>
+                    </div>
+                    
+                    <div class="tech-card rounded-lg p-4 hover-lift">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-12 h-12 bg-[#E2C665] rounded-full flex items-center justify-center text-black font-bold text-xl">
+                                5
+                            </div>
+                        </div>
+                        <h4 class="text-center text-[#E2C665] font-medium mb-2">Pembayaran</h4>
+                        <p class="text-sm text-gray-300 text-center">Registrasi ulang dan pembayaran biaya pendidikan</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Non-Test Track Process -->
+            <div id="tab-nontest" class="tab-content hidden">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                    <div class="tech-card rounded-lg p-4 hover-lift">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-12 h-12 bg-[#E2C665] rounded-full flex items-center justify-center text-black font-bold text-xl">
+                                1
+                            </div>
+                        </div>
+                        <h4 class="text-center text-[#E2C665] font-medium mb-2">Pendaftaran Online</h4>
+                        <p class="text-sm text-gray-300 text-center">Isi formulir dan upload sertifikat prestasi</p>
+                    </div>
+                    
+                    <div class="tech-card rounded-lg p-4 hover-lift">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-12 h-12 bg-[#E2C665] rounded-full flex items-center justify-center text-black font-bold text-xl">
+                                2
+                            </div>
+                        </div>
+                        <h4 class="text-center text-[#E2C665] font-medium mb-2">Verifikasi</h4>
+                        <p class="text-sm text-gray-300 text-center">Validasi prestasi & portofolio</p>
+                    </div>
+                    
+                    <div class="tech-card rounded-lg p-4 hover-lift">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-12 h-12 bg-[#E2C665] rounded-full flex items-center justify-center text-black font-bold text-xl">
+                                3
+                            </div>
+                        </div>
+                        <h4 class="text-center text-[#E2C665] font-medium mb-2">Wawancara</h4>
+                        <p class="text-sm text-gray-300 text-center">Sesi interview dengan tim akademik</p>
+                    </div>
+                    
+                    <div class="tech-card rounded-lg p-4 hover-lift">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-12 h-12 bg-[#E2C665] rounded-full flex items-center justify-center text-black font-bold text-xl">
+                                4
+                            </div>
+                        </div>
+                        <h4 class="text-center text-[#E2C665] font-medium mb-2">Pengumuman</h4>
+                        <p class="text-sm text-gray-300 text-center">Hasil seleksi via email</p>
+                    </div>
+                    
+                    <div class="tech-card rounded-lg p-4 hover-lift">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-12 h-12 bg-[#E2C665] rounded-full flex items-center justify-center text-black font-bold text-xl">
+                                5
+                            </div>
+                        </div>
+                        <h4 class="text-center text-[#E2C665] font-medium mb-2">Pembayaran</h4>
+                        <p class="text-sm text-gray-300 text-center">Registrasi ulang dan pembayaran biaya pendidikan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scholarship Section -->
+    <section id="scholarship" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="inline-block px-2 py-1 bg-[#E2C665] text-black rounded-md mr-2">🎓</span>
+                Kesetaraan peluang untuk dapatkan pendidikan berkualitas
+            </h2>
+            
+            <div class="relative">
+                <div class="carousel-container overflow-x-auto pb-6 hide-scrollbar">
+                    <div class="carousel-track flex space-x-6">
+                        <!-- Scholarship Card 1 -->
+                        <div class="carousel-item flex-none w-full sm:w-1/2 lg:w-1/3">
+                            <div class="tech-card rounded-lg p-6 h-full flex flex-col hover-lift">
+                                <div class="flex items-center mb-4">
+                                    <div class="flex-shrink-0 mr-4">
+                                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600 flex items-center justify-center">
+                                            <i data-feather="award" class="text-black h-6 w-6"></i>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-white">Beasiswa Akademik</h3>
+                                </div>
+                                <p class="text-gray-300 mb-6 flex-grow">Beasiswa full atau parsial berdasarkan prestasi akademik untuk siswa berprestasi dengan nilai rata-rata 90+.</p>
+                                <a href="#" class="text-[#E2C665] hover:text-yellow-300 inline-flex items-center">
+                                    Lihat Detail
+                                    <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Scholarship Card 2 -->
+                        <div class="carousel-item flex-none w-full sm:w-1/2 lg:w-1/3">
+                            <div class="tech-card rounded-lg p-6 h-full flex flex-col hover-lift">
+                                <div class="flex items-center mb-4">
+                                    <div class="flex-shrink-0 mr-4">
+                                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600 flex items-center justify-center">
+                                            <i data-feather="code" class="text-black h-6 w-6"></i>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-white">Beasiswa Coding Champion</h3>
+                                </div>
+                                <p class="text-gray-300 mb-6 flex-grow">Khusus untuk pemenang lomba programming tingkat nasional/internasional atau memiliki proyek inovatif di bidang AI.</p>
+                                <a href="#" class="text-[#E2C665] hover:text-yellow-300 inline-flex items-center">
+                                    Lihat Detail
+                                    <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Scholarship Card 3 -->
+                        <div class="carousel-item flex-none w-full sm:w-1/2 lg:w-1/3">
+                            <div class="tech-card rounded-lg p-6 h-full flex flex-col hover-lift">
+                                <div class="flex items-center mb-4">
+                                    <div class="flex-shrink-0 mr-4">
+                                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600 flex items-center justify-center">
+                                            <i data-feather="users" class="text-black h-6 w-6"></i>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-white">Beasiswa Mahasiswa Dhuafa</h3>
+                                </div>
+                                <p class="text-gray-300 mb-6 flex-grow">Program subsidi untuk calon mahasiswa dari keluarga kurang mampu yang memiliki potensi akademik tinggi.</p>
+                                <a href="#" class="text-[#E2C665] hover:text-yellow-300 inline-flex items-center">
+                                    Lihat Detail
+                                    <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button class="carousel-nav-prev absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-1/2 bg-black bg-opacity-50 rounded-full p-2 focus:outline-none hidden md:block">
+                    <i data-feather="chevron-left" class="text-white h-6 w-6"></i>
+                </button>
+                <button class="carousel-nav-next absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 bg-black bg-opacity-50 rounded-full p-2 focus:outline-none hidden md:block">
+                    <i data-feather="chevron-right" class="text-white h-6 w-6"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="inline-block px-2 py-1 bg-[#E2C665] text-black rounded-md mr-2">❓</span>
+                Pertanyaan Umum tentang Penerimaan Mahasiswa Baru
+            </h2>
+
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item mb-4 border border-gray-700 rounded-lg overflow-hidden">
+                    <button class="accordion-header w-full text-left p-4 flex items-center justify-between bg-gray-800 hover:bg-gray-700 transition-colors">
+                        <span class="text-lg font-medium">Apa saja biaya kuliah di PLAI?</span>
+                        <i data-feather="chevron-down" class="accordion-icon h-5 w-5 transform transition-transform"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-800 bg-opacity-50">
+                        <div class="p-4 text-gray-300">
+                            <p>Biaya kuliah di PLAI BMD terdiri dari biaya pendaftaran sebesar Rp. 300.000, biaya pengembangan Rp. 15.000.000 (bisa dicicil), dan SPP per semester Rp. 8.500.000. Tersedia juga berbagai program beasiswa yang dapat mengurangi biaya pendidikan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item mb-4 border border-gray-700 rounded-lg overflow-hidden">
+                    <button class="accordion-header w-full text-left p-4 flex items-center justify-between bg-gray-800 hover:bg-gray-700 transition-colors">
+                        <span class="text-lg font-medium">Apakah perlu memiliki background IT untuk mendaftar?</span>
+                        <i data-feather="chevron-down" class="accordion-icon h-5 w-5 transform transition-transform"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-800 bg-opacity-50">
+                        <div class="p-4 text-gray-300">
+                            <p>Tidak perlu memiliki background IT khusus, tetapi calon mahasiswa diharapkan memiliki minat tinggi pada bidang teknologi, kemampuan dasar logika dan matematika yang baik, serta kemauan untuk belajar yang kuat.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item mb-4 border border-gray-700 rounded-lg overflow-hidden">
+                    <button class="accordion-header w-full text-left p-4 flex items-center justify-between bg-gray-800 hover:bg-gray-700 transition-colors">
+                        <span class="text-lg font-medium">Apa saja yang dipersiapkan untuk tes seleksi?</span>
+                        <i data-feather="chevron-down" class="accordion-icon h-5 w-5 transform transition-transform"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-800 bg-opacity-50">
+                        <div class="p-4 text-gray-300">
+                            <p>Tes seleksi meliputi: (1) Tes logika dan penalaran, (2) Tes bahasa Inggris, (3) Wawancara motivasi dan minat. Persiapkan diri dengan melatih soal logika, memperkuat kemampuan bahasa Inggris dasar, dan memahami perkembangan teknologi AI terkini.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item mb-4 border border-gray-700 rounded-lg overflow-hidden">
+                    <button class="accordion-header w-full text-left p-4 flex items-center justify-between bg-gray-800 hover:bg-gray-700 transition-colors">
+                        <span class="text-lg font-medium">Bagaimana sistem perkuliahan di PLAI BMD?</span>
+                        <i data-feather="chevron-down" class="accordion-icon h-5 w-5 transform transition-transform"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-800 bg-opacity-50">
+                        <div class="p-4 text-gray-300">
+                            <p>PLAI BMD menerapkan sistem perkuliahan berbasis Project-Based Learning dengan 70% praktek dan 30% teori. Kelas berlangsung 5 hari dalam seminggu dengan durasi 8 jam per hari. Mahasiswa akan banyak mengerjakan proyek nyata dan berkolaborasi dengan industri.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section id="form" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="max-w-xl mx-auto tech-card rounded-lg p-8 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-2 gold-gradient"></div>
+                
+                <h3 class="text-2xl font-bold mb-6 text-center">Daftar PLAI Sekarang!</h3>
+                <p class="text-gray-300 mb-8 text-center">Isi formulir di bawah ini dan tim admisi kami akan menghubungi Anda segera.</p>
+                
+                <form id="registrationForm" class="space-y-4">
+                    <div>
+                        <label for="nama" class="block text-sm font-medium text-gray-300 mb-1">Nama Lengkap*</label>
+                        <input type="text" id="nama" name="nama" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:ring-2 focus:ring-yellow-500 focus:border-transparent text-white">
+                    </div>
+                    
+                    <div>
+                        <label for="telepon" class="block text-sm font-medium text-gray-300 mb-1">Nomor HP/WhatsApp*</label>
+                        <input type="tel" id="telepon" name="telepon" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:ring-2 focus:ring-yellow-500 focus:border-transparent text-white">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email*</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:ring-2 focus:ring-yellow-500 focus:border-transparent text-white">
+                    </div>
+                    
+                    <div>
+                        <label for="sekolah" class="block text-sm font-medium text-gray-300 mb-1">Asal Sekolah*</label>
+                        <input type="text" id="sekolah" name="sekolah" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:ring-2 focus:ring-yellow-500 focus:border-transparent text-white">
+                    </div>
+                    
+                    <div>
+                        <label for="program" class="block text-sm font-medium text-gray-300 mb-1">Program yang Diminati*</label>
+                        <select id="program" name="program" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:ring-2 focus:ring-yellow-500 focus:border-transparent text-white">
+                            <option value="" disabled selected>Pilih Program</option>
+                            <option value="ai_developer">AI Developer</option>
+                            <option value="data_scientist">Data Scientist</option>
+                            <option value="ml_engineer">Machine Learning Engineer</option>
+                        </select>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <input type="checkbox" id="captcha" name="captcha" required class="h-4 w-4 text-yellow-500 focus:ring-yellow-500 border-gray-600 rounded">
+                        <label for="captcha" class="ml-2 block text-sm text-gray-300">Saya bukan robot dan setuju dengan kebijakan privasi</label>
+                    </div>
+                    
+                    <div>
+                        <button type="submit" class="w-full btn-cta bg-[#E2C665] hover:bg-yellow-400 text-black font-bold py-3 px-8 rounded-md transition transform hover:-translate-y-1">Daftar Sekarang</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-black pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/3 mb-8 md:mb-0">
+                    <span class="flex items-center mb-4"><span class="text-yellow-500 font-bold text-2xl">PLAI</span><span class="px-1"></span><span class="text-white font-bold text-2xl">BMD</span></span>
+                    <p class="text-gray-400 mb-4 max-w-xs">Politeknik Artificial Intelligence Budi Mulia Dua - Lembaga pendidikan vokasi bidang AI pertama di Indonesia.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-[#E2C665] transition">
+                            <i data-feather="facebook" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-[#E2C665] transition">
+                            <i data-feather="instagram" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-[#E2C665] transition">
+                            <i data-feather="twitter" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-[#E2C665] transition">
+                            <i data-feather="youtube" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="w-full md:w-1/3 mb-8 md:mb-0">
+                    <h5 class="text-white font-bold mb-4">Alamat Kampus</h5>
+                    <p class="text-gray-400 mb-2">
+                        Jl. Raya Pendidikan No. 88<br>
+                        Yogyakarta, Indonesia 55281
+                    </p>
+                    <p class="text-gray-400 mb-2">
+                        <i data-feather="phone" class="h-4 w-4 inline mr-1"></i> +62 274 123456
+                    </p>
+                    <p class="text-gray-400">
+                        <i data-feather="mail" class="h-4 w-4 inline mr-1"></i> admisi@plai.ac.id
+                    </p>
+                </div>
+                
+                <div class="w-full md:w-1/3">
+                    <h5 class="text-white font-bold mb-4">Tautan Cepat</h5>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#admissions" class="text-gray-400 hover:text-[#E2C665] transition">Admisi</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-[#E2C665] transition">Akademik</a>
+                        </li>
+                        <li>
+                            <a href="#scholarship" class="text-gray-400 hover:text-[#E2C665] transition">Beasiswa</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-[#E2C665] transition">Karir</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-[#E2C665] transition">Tentang Kami</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-6">
+                <p class="text-sm text-gray-500 text-center">&copy; 2025 Politeknik Artificial Intelligence Budi Mulia Dua. All rights reserved.</p>
+            </div>
+        </div>
+        
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/6281234567890" target="_blank" class="float-wa pulse-btn">
+            <i data-feather="message-circle" class="text-white h-6 w-6"></i>
+        </a>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize Feather Icons
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+            
+            // Floating sidebar functionality
+            const sideMenu = document.getElementById('side-menu');
+            const admissionsSection = document.getElementById('admissions');
+            const sectionIds = ['admissions', 'requirements', 'process', 'scholarship', 'faq'];
+            
+            // Initial offset position of the side menu
+            let sideMenuInitialPos = sideMenu.getBoundingClientRect().top + window.scrollY;
+            
+            // Get the parent container width to maintain consistency
+            const sideMenuParent = sideMenu.parentElement;
+            const parentWidth = sideMenuParent.offsetWidth;
+            sideMenu.style.width = parentWidth + 'px';
+            
+            // Handle scroll event
+            window.addEventListener('scroll', function() {
+                // Check if we've scrolled past the initial position of the menu
+                if (window.scrollY >= sideMenuInitialPos - 20) {
+                    sideMenu.classList.add('sticky-menu');
+                    // Apply a placeholder to prevent content jump
+                    if (!document.getElementById('menu-placeholder')) {
+                        const placeholder = document.createElement('div');
+                        placeholder.id = 'menu-placeholder';
+                        placeholder.style.height = sideMenu.offsetHeight + 'px';
+                        sideMenuParent.appendChild(placeholder);
+                    }
+                } else {
+                    sideMenu.classList.remove('sticky-menu');
+                    // Remove placeholder when not sticky
+                    const placeholder = document.getElementById('menu-placeholder');
+                    if (placeholder) placeholder.remove();
+                }
+                
+                // Highlight current section in the menu
+                highlightCurrentSection();
+            });
+            
+            // Recalculate on window resize
+            window.addEventListener('resize', function() {
+                // Get the new position after resize
+                sideMenuInitialPos = admissionsSection.getBoundingClientRect().top + window.scrollY;
+            });
+            
+            // Function to highlight the current section in the menu
+            function highlightCurrentSection() {
+                // Get current scroll position
+                const scrollPosition = window.scrollY;
+                
+                // Find which section is currently visible
+                for (let i = sectionIds.length - 1; i >= 0; i--) {
+                    const section = document.getElementById(sectionIds[i]);
+                    const sectionTop = section.offsetTop;
+                    
+                    if (scrollPosition >= sectionTop - 100) { // 100px offset for better UX
+                        // Remove active class from all menu items
+                        const menuItems = document.querySelectorAll('#side-menu li');
+                        menuItems.forEach(item => {
+                            item.classList.remove('bg-gray-800', 'text-[#E2C665]', 'font-medium');
+                            item.classList.add('hover:bg-gray-800');
+                        });
+                        
+                        // Add active class to current section's menu item
+                        const activeItem = document.querySelector(`#side-menu a[href='#${sectionIds[i]}']`).parentElement;
+                        activeItem.classList.add('bg-gray-800', 'text-[#E2C665]', 'font-medium');
+                        activeItem.classList.remove('hover:bg-gray-800');
+                        
+                        break;
+                    }
+                }
+            }
+            
+            // Initialize the highlight
+            highlightCurrentSection();
+            
+            // Mobile menu toggle
+            const menuBtn = document.getElementById('menuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            menuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Tab functionality
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    tabBtns.forEach(b => b.classList.remove('active', 'bg-gray-700'));
+                    // Add active class to clicked button
+                    this.classList.add('active', 'bg-gray-700');
+                    
+                    // Hide all tab contents
+                    tabContents.forEach(content => content.classList.add('hidden'));
+                    // Show the selected tab content
+                    const targetId = this.getAttribute('data-target');
+                    document.getElementById(targetId).classList.remove('hidden');
+                });
+            });
+            
+            // Accordion functionality
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const accordionItem = this.parentElement;
+                    const accordionContent = this.nextElementSibling;
+                    const accordionIcon = this.querySelector('.accordion-icon');
+                    
+                    // Toggle active class
+                    accordionItem.classList.toggle('active');
+                    
+                    // Toggle icon rotation
+                    if (accordionItem.classList.contains('active')) {
+                        accordionIcon.style.transform = 'rotate(180deg)';
+                        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                    } else {
+                        accordionIcon.style.transform = 'rotate(0)';
+                        accordionContent.style.maxHeight = 0;
+                    }
+                });
+            });
+            
+            // Form validation
+            const form = document.getElementById('registrationForm');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Simple validation
+                let valid = true;
+                const requiredFields = form.querySelectorAll('[required]');
+                
+                requiredFields.forEach(field => {
+                    if (!field.value) {
+                        valid = false;
+                        field.classList.add('border-red-500');
+                    } else {
+                        field.classList.remove('border-red-500');
+                    }
+                });
+                
+                if (valid) {
+                    // Submit form or show success message
+                    alert('Terima kasih telah mendaftar! Tim kami akan segera menghubungi Anda.');
+                    form.reset();
+                }
+            });
+            
+            // Carousel functionality
+            const carouselTrack = document.querySelector('.carousel-track');
+            const carouselItems = document.querySelectorAll('.carousel-item');
+            const prevBtn = document.querySelector('.carousel-nav-prev');
+            const nextBtn = document.querySelector('.carousel-nav-next');
+            
+            if (carouselTrack && prevBtn && nextBtn) {
+                let currentIndex = 0;
+                const itemWidth = carouselItems[0].clientWidth;
+                const visibleItems = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1;
+                const maxIndex = carouselItems.length - visibleItems;
+                
+                prevBtn.addEventListener('click', function() {
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                        updateCarousel();
+                    }
+                });
+                
+                nextBtn.addEventListener('click', function() {
+                    if (currentIndex < maxIndex) {
+                        currentIndex++;
+                        updateCarousel();
+                    }
+                });
+                
+                function updateCarousel() {
+                    const offset = -currentIndex * (itemWidth + 24); // 24 is space-x-6 in pixels
+                    carouselTrack.style.transform = `translateX(${offset}px)`;
+                    carouselTrack.style.transition = 'transform 0.3s ease-in-out';
+                }
+                
+                // Auto resize handling
+                window.addEventListener('resize', function() {
+                    // Reset carousel on window resize
+                    currentIndex = 0;
+                    updateCarousel();
+                });
+            }
+            
+            // Button hover effect
+            const btns = document.querySelectorAll('.btn');
+            btns.forEach(btn => {
+                btn.addEventListener('mouseover', function() {
+                    btn.style.transform = 'translateY(-2px)';
+                    btn.style.boxShadow = '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)';
+                });
+                btn.addEventListener('mouseout', function() {
+                    btn.style.transform = '';
+                    btn.style.boxShadow = '';
+                });
+            });
+        });
+    </script>
+    <style>
+        /* Sticky menu styles */
+        .sticky-menu {
+            position: fixed;
+            top: 80px; /* Adjusted for better alignment with header */
+            z-index: 40;
+            transition: none; /* Remove transition for exact positioning */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</body>
+</html>
