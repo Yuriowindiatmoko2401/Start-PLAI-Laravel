@@ -135,11 +135,11 @@
         🎓 Dapatkan Informasi Admisi PLAI Budi Mulia Melalui WhatsApp! 🎓
     </p>
     <div class="flex gap-2 justify-center">
-        <a href="https://wa.me/6281234567890" target="_blank"
+        <a href="https://wa.me/6281119588887?text=Halo%20Admin%20PLAI%20BMD%2C%20saya%20tertarik%20dengan%20program%20kuliah%20di%20Politeknik%20Artificial%20Intelligence%20Budi%20Mulia%20Dua.%20Mohon%20informasi%20lebih%20lanjut%20tentang%20penerimaan%20mahasiswa%20baru%20dan%20syarat%20pendaftarannya.%20Terima%20kasih!" target="_blank"
             class="text-xs px-3 py-1 rounded bg-[#E2C665] text-white hover:bg-yellow-600 transition">
             Tanya Sekarang
         </a>
-        <a href="https://bmd.ac.id" target="_blank"
+        <a href="https://plai.ac.id" target="_blank"
             class="text-xs px-3 py-1 rounded border border-[#E2C665] text-gray-700 hover:bg-gray-100 transition">
             Website
         </a>
